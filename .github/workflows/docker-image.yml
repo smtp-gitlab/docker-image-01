@@ -9,10 +9,10 @@ on:
 
 env:
   IMAGE_NAME: ubuntu-ssh-demo
+  environment: production
   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
 
 jobs:
-  environment: production
   build-and-publish:
     runs-on: ubuntu-latest
     
