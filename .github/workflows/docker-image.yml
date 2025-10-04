@@ -12,6 +12,7 @@ env:
   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
 
 jobs:
+  environment: production
   build-and-publish:
     runs-on: ubuntu-latest
     
